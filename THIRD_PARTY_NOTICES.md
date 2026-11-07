@@ -1,6 +1,6 @@
 # Third-party notices
 
-The project license covers original ScreenRelay code. Third-party components retain their original licenses.
+GNU GPLv3 (GPL-3.0-only) covers original ScreenRelay code. Third-party components retain their original licenses.
 
 ## UUyc-companion recognition adaptation
 

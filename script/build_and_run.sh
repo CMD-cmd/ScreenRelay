@@ -28,7 +28,7 @@ PY
 /usr/bin/python3 - "$APP" <<'PY'
 import plistlib,sys,pathlib
 p=pathlib.Path(sys.argv[1])/'Contents'/'Info.plist'
-p.write_bytes(plistlib.dumps({'CFBundleIdentifier':'local.codex.UUDisplayAutomation','CFBundleName':'屏幕接力','CFBundleDisplayName':'屏幕接力','CFBundleExecutable':'UUDisplayAutomation','CFBundlePackageType':'APPL','CFBundleShortVersionString':'1.7.1','CFBundleVersion':'25','CFBundleIconFile':'AppIcon','LSMinimumSystemVersion':'14.0','LSUIElement':True,'NSPrincipalClass':'NSApplication','NSHumanReadableCopyright':'Local display automation; includes MIT-attributed UUyc-companion AX recognition.'}))
+p.write_bytes(plistlib.dumps({'CFBundleIdentifier':'local.codex.UUDisplayAutomation','CFBundleName':'屏幕接力','CFBundleDisplayName':'屏幕接力','CFBundleExecutable':'UUDisplayAutomation','CFBundlePackageType':'APPL','CFBundleShortVersionString':'1.7.2','CFBundleVersion':'26','CFBundleIconFile':'AppIcon','LSMinimumSystemVersion':'14.0','LSUIElement':True,'NSPrincipalClass':'NSApplication','NSHumanReadableCopyright':'Local display automation; includes MIT-attributed UUyc-companion AX recognition.'}))
 PY
 cp "$ROOT_DIR/LICENSE.md" "$APP/Contents/Resources/LICENSE.md"
 cp "$ROOT_DIR/THIRD_PARTY_NOTICES.md" "$APP/Contents/Resources/THIRD_PARTY_NOTICES.md"

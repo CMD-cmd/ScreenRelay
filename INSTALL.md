@@ -1,12 +1,27 @@
 # 安装说明
 
-本安装包面向 Apple Silicon，需 macOS 14+，并安装 Apple Command Line Tools、BetterDisplay 和 UU 远程。
+本安装包面向 Apple Silicon 架构设备，要求 macOS 14 或更新版本（本机验证环境为 macOS 27）。
 
-应用为开发预览，使用 ad-hoc 签名，尚未 Apple 公证。首次运行可能被 macOS 阻止；请先审查来源与源码。
+## 准备工作
 
-运行 Install.command 会将屏幕接力和助手安装到当前用户目录，并注册一个登录服务。首次安装为暂停状态。
-已有用户请先在旧版恢复实体屏并暂停，再运行安装。安装程序保留原有偏好与备份，并拒绝覆盖未完成的恢复任务。
+安装前请确认系统已具备：
+1. Apple Command Line Tools（提供 `/usr/bin/python3`）；
+2. UU 远程；
+3. BetterDisplay（部分接管功能依赖其专业版功能，本项目不包含其授权）。
 
-安装后按应用引导授予辅助功能权限，再在 BetterDisplay 开启允许断开全部已连接显示器，配置设备并启用自动接力。
+## 安装步骤
 
-许可及第三方声明分别见 LICENSE.md 和 THIRD_PARTY_NOTICES.md。
+1. **更新前准备（已有用户）**：若正从旧版本升级，请先按快捷键 `Control + Option + Command + 9` 恢复实体屏显示并暂停接力。安装程序会保留原有配置与备份，并在检测到未完成的恢复状态时拒绝覆盖。
+2. **执行安装**：解压 `ScreenRelay-1.7.2-macOS-arm64.zip` 后，运行其中的 `Install.command`。脚本会将程序安装至当前用户目录并注册一个后台登录项。安装完成后默认处于暂停状态。
+3. **辅助功能授权**：启动后按应用内引导，在“系统设置 → 隐私与安全性 → 辅助功能”中为屏幕接力勾选授权。
+4. **设置 BetterDisplay**：进入 BetterDisplay 设置，勾选“允许断开所有已连接的显示器”。
+5. **配置设备**：打开屏幕接力设备工作台，核对 UU 设备名称绑定、方向、HiDPI 大小及光标倍率，随后开启“自动接力”。
+
+## 运行说明
+
+当前应用为开发预览版，采用 ad-hoc 方式签名，未提交 Apple 公证。macOS 可能阻止首次打开，请先核实来源；也可以审阅源码后自行构建。
+
+## 协议声明
+
+本项目原创内容以 `GPL-3.0-only` 授权，允许商业使用与收费分发。分发修改版需按许可规定提供对应源码并延续 GPL 许可；内部使用不强制公开源码。第三方组件保留 MIT 许可。源码参考：https://github.com/CMD-cmd/ScreenRelay/tree/v1.7.2 。
+许可全文见 LICENSE.md，第三方声明见 THIRD_PARTY_NOTICES.md。
