@@ -1,0 +1,18 @@
+{
+  "hosts": {
+    "com.microsoft.Excel": {
+      "sha256": "6690b756a129233c460be7f785a41d0a00cfa4038c0c7d7e3f24c5fa9514063f",
+      "source_sha256": "d320a1da8e7de997b8a18218566077a40db89a4dc709898f0f1ddc02f4017c05",
+      "vba_project_sha256": "b0342288a343cc4e3ff1680de8b5597d7a9da3151eeb5d47756ea8cd26f5a98e"
+    },
+    "com.microsoft.Powerpoint": {
+      "sha256": "25fcb4621e64bf75257467e7279d631e73fa39e7fcf170783426c7af011bfd16",
+      "source_sha256": "4cad31aba484df12892f1e5cad1a69aa816709cf9426104963666e1974dd7634",
+      "vba_project_sha256": "3f824774a48099f1179d3fbe3fe783d3a68c906283388c395d10bb912d7a1120"
+    }
+  },
+  "module_version": 2,
+  "project_form": "MS-OVBA source, Version=0xFFFF, no performance caches",
+  "schema": 1,
+  "version": "2.0.0"
+}

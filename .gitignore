@@ -1,0 +1,15 @@
+dist/
+.build/
+__pycache__/
+*.pyc
+.DS_Store
+evidence/
+backups/
+.codex/
+.oil-ui/
+*.log
+.env
+.env.*
+*.key
+*.p12
+*.mobileprovision
